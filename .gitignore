@@ -1,1 +1,16 @@
 .DS_Store
+/UserLogin/nbproject/private/
+/UserLogin/build/
+/UserLogin/dist/
+/BallOnGrid/nbproject/private/
+/BallOnGrid/dist/
+/BallOnGrid/build/
+/MouseEvent/nbproject/private/
+/MouseEvent/build/
+/MouseEvent/dist/
+/MouseEventTest/nbproject/private/
+/MouseEventTest/dist/
+/MouseEventTest/build/
+/GridBall/nbproject/private/
+/GridBall/build/
+/GridBall/dist/
