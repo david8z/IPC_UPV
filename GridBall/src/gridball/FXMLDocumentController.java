@@ -23,25 +23,15 @@ public class FXMLDocumentController implements Initializable {
      
      @FXML
      public GridPane pane;
-    
-     /*@FXML
-    public void CirclePressed(ActionEvent event) {
-     
-        circle.setFill(Paint.valueOf("BLACK")); //It changes the ball color
-       circle.getParent();
-       GridPane.setColumnIndex(circle,GridPane.getColumnIndex(circle)+1);
-       System.out.println(GridPane.getColumnIndex(circle));
-       System.out.println(GridPane.getRowIndex(circle));
-       System.out.println("hola");
-    }*/
  
     @Override
     public void initialize(URL url, ResourceBundle rb) { 
          pane.widthProperty().addListener((observable, oldValue, newValue)-> {
-             circle.setRadius(((double) newValue)/10);
+            
+                 circle.setRadius((Math.min(pane.getHeight(),(double) newValue)/10));
          });
          pane.heightProperty().addListener((observable, oldValue, newValue)-> {
-             circle.setRadius(((double) newValue)/10);
+             circle.setRadius((Math.min(pane.getWidth(),(double) newValue)/10));
          });
     
     }    
